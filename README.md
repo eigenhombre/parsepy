@@ -20,5 +20,3 @@ A Clojure module for parsing Python configuration files.
     [section_one]
     x = 1
     s = "A really great string"
-
-

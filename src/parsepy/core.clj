@@ -212,10 +212,6 @@ q=10
 
   )
 
-;; Let's add some more unit tests to make sure we're covering a few
-;; important format variations:
-;;
-(is (= (parse "[x]\ny = astring\n") ))
 ;; We could do more with this in terms of getting nicer data
 ;; structures, or handling multi-line assignments, but this module
 ;; already does most of what Python's
