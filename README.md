@@ -8,9 +8,11 @@ A Clojure module for parsing Python configuration files.
 
 ## Dependencies:
 
-Uses the truly awesome (Instaparse)[https://github.com/Engelberg/instaparse] library.
+Uses the truly awesome [Instaparse](https://github.com/Engelberg/instaparse) library.
 
-See the (Marginalia docs)[] for more documentation.
+See the [Marginalia
+docs](http://eigenhombre.com/semi-literate-programming/parsepy.html)
+for more documentation.
 
 ## Usage
 
