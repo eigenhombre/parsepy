@@ -2,11 +2,11 @@
 
 A Clojure module for parsing Python configuration files.
 
-## Author
+### Author
 
 [John Jacobsen](http://eigenhombre.com)
 
-## Dependencies:
+### Dependencies
 
 Uses the truly awesome [Instaparse](https://github.com/Engelberg/instaparse) library.
 
@@ -14,7 +14,7 @@ See the [Marginalia
 docs](http://eigenhombre.com/semi-literate-programming/parsepy.html)
 for more documentation.
 
-## Usage
+### Usage
 
 Add to `project.clj`:
 
@@ -27,13 +27,17 @@ Example:
     (ns my.great.namespace
       (require [parsepy.core :as parsepy]))
 
-    (parse "
+    (parsepy/parse "
 
     # This is a Python configuration file, suitable for parsing 
     # with ConfigParser or parsepy.
+    
     [section_one]
     x = 1
-    s = string_value)
+    s = string_value
+    ")
+
+    ;;=> ([:section section_one :x 1 :s string_value])
 
 ## Limitations:
 

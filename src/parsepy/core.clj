@@ -19,7 +19,7 @@
 ;; how this module works.
 ;;
 (ns parsepy.core
-  (:require [clojure.test :refer [is deftest]]
+  (:require [clojure.test :refer [is]]
             [instaparse.core :as insta]))
 
 
@@ -62,8 +62,8 @@
     <comment> = <hash> #'.+?\\n+'
     <hash> = '#'
     section-terms = s0 st*
-    <s0> = #'[a-zA-Z]'
-    <st> = (space | #'[a-zA-Z0-9]+')
+    <s0> = #'[a-zA-Z_]'
+    <st> = (space | #'[a-zA-Z0-9_]+')
     <assignment> = lvalue <space*> <equal> <space>* const newline+
     <space> = ' '
     equal = <'='>

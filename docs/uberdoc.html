@@ -3049,7 +3049,7 @@ programming</a>,
 putting our tests inline with our code to help our description of
 how this module works.</p>
 </td><td class="codes"><pre class="brush: clojure">(ns parsepy.core
-  (:require [clojure.test :refer [is deftest]]
+  (:require [clojure.test :refer [is]]
             [instaparse.core :as insta]))</pre></td></tr><tr><td class="docs"><h1>Parsing</h1>
 
 <p>Let's start with recognizing <code>[section]</code> tags.  We first declare
@@ -3084,8 +3084,8 @@ each with (potentially) multiple assignments and comments.</p>
     &lt;comment&gt; = &lt;hash&gt; #'.+?\\n+'
     &lt;hash&gt; = '#'
     section-terms = s0 st*
-    &lt;s0&gt; = #'[a-zA-Z]'
-    &lt;st&gt; = (space | #'[a-zA-Z0-9]+')
+    &lt;s0&gt; = #'[a-zA-Z_]'
+    &lt;st&gt; = (space | #'[a-zA-Z0-9_]+')
     &lt;assignment&gt; = lvalue &lt;space*&gt; &lt;equal&gt; &lt;space&gt;* const newline+
     &lt;space&gt; = ' '
     equal = &lt;'='&gt;
