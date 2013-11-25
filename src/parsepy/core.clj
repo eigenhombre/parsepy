@@ -145,4 +145,5 @@ q=10
 ;; [ConfigParser](http://docs.python.org/2/library/configparser.html)
 ;; does, with relatively little code.
 ;;
-;; The package is up on Clojars and [GitHub](https://github.com/eigenhombre/parsepy).
+;; The package is up on [Clojars](https://clojars.org/parsepy) and
+;; [GitHub](https://github.com/eigenhombre/parsepy).
