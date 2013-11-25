@@ -19,7 +19,7 @@ Uses the truly awesome [Instaparse](https://github.com/Engelberg/instaparse) lib
 
 Add to `project.clj`:
 
-    [parsepy "0.0.1"]
+    [parsepy "0.0.1-SNAPSHOT"]
 
 And import `parsepy.core`.
 
