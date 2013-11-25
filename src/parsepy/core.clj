@@ -134,83 +134,10 @@ q=10
   "7002"
   :jsonfile
   "$HOME/catchall.json"]
- [:section "filewatcher" :loglevel "info"]
- [:section
-  "livecontrol"
-  :page_file
-  "monitor.anvil.page"
-  :loglevel
-  "info"
-  :alertdb
-  "$HOME/.i3live-alerts"
-  :fill_pdaq_downtime
-  "True"
-  :max_run_fails
-  "4"
-  :moniport
-  "7000"
-  :moniservport_udp
-  "6666"
-  :moniservport_tcp
-  "6667"
-  :moniservport_zmq
-  "6668"
-  :newrun_timeout
-  "60"
-  :recovery_failure_sleep_time
-  "10"
-  :recovery_timeout
-  "300"
-  :rpcport
-  "6661"
-  :start_timeout
-  "300"
-  :stop_timeout
-  "300"
-  :switchrun_timeout
-  "60"
-  :recovery_failure_sleep_time
-  "10"
-  :fill_pdaq_downtime
-  "True"
-  :runs_per_restart
-  "0"
-  :default_rpc_timeout
-  "20"
-  :queue_stats_ival
-  "3600"
-  :dbuser
-  "live"
-  :dbhost
-  "localhost"
-  :dbname
-  "I3OmDb_test"
-  :omdb_time_update
-
-  "False"
-  :max_its_message
-  "1300"
-  :min_its_dt
-  "75"
-  :max_its_delay
-  "500"
-  :min_spade_email_delay
-  "120"
-  :max_spade_email_delay
-  "1800"
-  :spade_email_bandwidth
-  "420"
-  :min_spade_scp_delay
-  "500"
-  :max_spade_scp_delay
-  "1800"
-  :spade_scp_bandwidth
-  "2300"
-  :encryption_enabled
-  "False"]
- [:section "i3moni" :run_bad_limit_minutes "10"])
-
+  [:section "filewatcher" :loglevel "info"]
+  ;; ...   
   )
+)
 
 ;; We could do more with this in terms of getting nicer data
 ;; structures, or handling multi-line assignments, but this module
@@ -218,4 +145,4 @@ q=10
 ;; [ConfigParser](http://docs.python.org/2/library/configparser.html)
 ;; does, with relatively little code.
 ;;
-;; The package is up on Clojars and GitHub.
+;; The package is up on Clojars and [GitHub](https://github.com/eigenhombre/parsepy).

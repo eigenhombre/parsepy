@@ -2,6 +2,10 @@
 
 A Clojure module for parsing Python configuration files.
 
+See the [Marginalia
+docs](http://eigenhombre.com/semi-literate-programming/parsepy.html)
+for more documentation.
+
 ### Author
 
 [John Jacobsen](http://eigenhombre.com)
@@ -10,9 +14,6 @@ A Clojure module for parsing Python configuration files.
 
 Uses the truly awesome [Instaparse](https://github.com/Engelberg/instaparse) library.
 
-See the [Marginalia
-docs](http://eigenhombre.com/semi-literate-programming/parsepy.html)
-for more documentation.
 
 ### Usage
 
